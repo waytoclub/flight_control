@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "3eaa668c-4eba-4357-ba0d-e3a3c5f7bf28",
+		"name": "Flight_Controlles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1329244"
+	},
+	"item": [
+		{
+			"name": "Flight Delete API",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "F100 2021-03-29T18:00:00\r\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/remove-flight-details",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"remove-flight-details"
+					]
+				},
+				"description": "Flight Remove API"
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Save",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FuanUiLCJwaG9uZSI6IjkxMDk5MjA4MTMiLCJhZGRyZXNzIjoibXVtYmFpLCBrYXJvbCBiYWciLCJpYXQiOjE3MTMwOTI5ODIsImV4cCI6MTcxMzA5MzA0Mn0.Lqisa_0VbNoJyTRiSHjEBgOFVJd-lkto-o6AfibgHOU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "F100 747 DELHI DOHA Land 2021-03-29T18:00:00 500",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/save-flight-events",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"save-flight-events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Get Departure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/get-flights-departure",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"get-flights-departure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Flight By Time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/get-flights-by-time/2021-03-29T12:00:00",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"get-flights-by-time",
+						"2021-03-29T12:00:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Audit Search By Time Past",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/get-audit-search-flights/2021-03-29T12:00:00",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"get-audit-search-flights",
+						"2021-03-29T12:00:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Update - timeframe and fuel delta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "F100 747 DELHI DOHA Land 2021-03-29T18:00:00 400",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/update-flight-details",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update-flight-details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
