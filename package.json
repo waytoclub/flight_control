@@ -1,0 +1,41 @@
+{
+  "name": "flight-control-unit",
+  "version": "1.0.0",
+  "description": "git@github.com:waytoclub/flight_control.git",
+  "main": "app.js",
+  "scripts": {
+    "start": "ts-node-dev src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waytoclub/flight_control.git"
+  },
+  "keywords": [
+    "Fligh",
+    "Control",
+    "Airport",
+    "Ground",
+    "Staff",
+    "Flight",
+    "Details"
+  ],
+  "author": "Sanju Panikar M.Tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waytoclub/flight_control/issues"
+  },
+  "homepage": "https://github.com/waytoclub/flight_control#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/mongoose": "^5.11.97",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "mongoose": "^8.4.0"
+  }
+}

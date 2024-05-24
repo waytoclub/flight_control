@@ -1,0 +1,1 @@
+{"version":3,"file":"FlightEvent.js","sourceRoot":"","sources":["../../src/classes/FlightEvent.ts"],"names":[],"mappings":";;;AAEA,MAAa,YAAY;IAAzB;QACE,kBAAa,GAAoB,EAAE,CAAC;IAWtC,CAAC;IATC,iBAAiB,CAAC,MAAM;QACtB,IAAI,CAAC,aAAa,CAAC,IAAI,CAAC,MAAM,CAAC,CAAA;QAC/B,OAAO,IAAI,CAAC,aAAa,CAAC;IAC5B,CAAC;IAED,gBAAgB;QACb,OAAO,IAAI,CAAC,aAAa,CAAC;IAC7B,CAAC;CAEF;AAZD,oCAYC"}
